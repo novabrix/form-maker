@@ -11,10 +11,7 @@
     <main>
       <div class="left">
         <div class="backer">
-          <img href="img/novaLogo.png" class="logo" />
-          <h1 class="webName">
-            <em>NOVABRIX FORMS!</em>
-          </h1>
+          <h1 class="webName">🌌<em>= NOVABRIX FORMS! =</em></h1>
         </div>
       </div>
 
@@ -32,27 +29,81 @@
           <h2 class="motiv">Let's Do This!</h2>
           <form action="">
             <div class="formRow">
-              <label for="firster">First Name:</label>
-              <input type="text" name="firstName" id="firster" required />
-              <label for="laster">Last Name:</label>
-              <input type="text" name="lastName" id="laster" required />
+              <div class="formEl push">
+                <label for="firster">First Name:</label>
+                <input
+                  type="text"
+                  name="firstName"
+                  id="firster"
+                  minlength="3"
+                  maxlength="30"
+                  required
+                />
+              </div>
+              <div class="formEl">
+                <label for="laster">Last Name:</label>
+                <input
+                  type="text"
+                  name="lastName"
+                  id="laster"
+                  minlength="3"
+                  maxlength="30"
+                  required
+                />
+              </div>
             </div>
             <div class="formRow">
-              <label for="mailer">Email:</label>
-              <input type="email" name="userEmail" id="mailer" required />
-              <label for="numberer">Phone Number:</label>
-              <input type="text" name="phoneNum" id="numberer" required />
+              <div class="formEl push">
+                <label for="mailer">Email:</label>
+                <input
+                  type="email"
+                  name="userEmail"
+                  id="mailer"
+                  maxlength="30"
+                  placeholder="yourname@example.com"
+                  required
+                />
+              </div>
+              <div class="formEl">
+                <label for="numberer">Phone Number:</label>
+                <input
+                  type="text"
+                  name="phoneNum"
+                  id="numberer"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  placeholder="Ex: 555-555-5555"
+                  required
+                />
+              </div>
             </div>
             <div class="formRow">
-              <label for="passer">Password:</label>
-              <input type="text" name="password" id="passer" required />
-              <label for="confirmer">Confirm Password:</label>
-              <input type="text" name="passwordConf" id="confirmer" required />
+              <div class="formEl push">
+                <label for="passer">Password:</label>
+                <input
+                  type="password"
+                  name="password"
+                  id="passer"
+                  minlength="8"
+                  maxlength="20"
+                  required
+                />
+              </div>
+              <div class="formEl">
+                <label for="confirmer">Confirm Password:</label>
+                <input
+                  type="password"
+                  name="passwordConf"
+                  id="confirmer"
+                  minlength="8"
+                  maxlength="20"
+                  required
+                />
+              </div>
             </div>
             <div class="bottom">
               <button class="signUp" type="submit">Sign Up!</button>
               <p class="reeler">
-                Already have an account?<a href="tempPage.html">Log In</a>
+                Already have an account? <a href="tempPage.html"> Log In!</a>
               </p>
             </div>
           </form>
